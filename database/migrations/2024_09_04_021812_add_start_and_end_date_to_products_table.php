@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
                 $table->text('start_date')->nullable()->after('discounted_price'); 
-                $table->string('end_date');
+                $table->string('end_date')->nullable()->after('discounted_price');
         });
     }
 
